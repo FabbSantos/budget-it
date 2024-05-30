@@ -34,3 +34,4 @@ C:\Users\Dread\Documents\Documentos Fabs\Projects\zdzcode\API\WebApplication1\We
 C:\Users\Dread\Documents\Documentos Fabs\Projects\zdzcode\API\WebApplication1\WebApplication1\obj\Debug\net8.0\WebApplication1.pdb
 C:\Users\Dread\Documents\Documentos Fabs\Projects\zdzcode\API\WebApplication1\WebApplication1\obj\Debug\net8.0\WebApplication1.genruntimeconfig.cache
 C:\Users\Dread\Documents\Documentos Fabs\Projects\zdzcode\API\WebApplication1\WebApplication1\obj\Debug\net8.0\ref\WebApplication1.dll
+C:\Users\Dread\Documents\Documentos Fabs\Projects\zdzcode\API\WebApplication1\WebApplication1\obj\Debug\net8.0\WebApplication1.sourcelink.json
