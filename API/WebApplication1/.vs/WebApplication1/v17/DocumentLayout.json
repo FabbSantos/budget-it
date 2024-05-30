@@ -9,10 +9,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{519E829F-CD98-4F07-8BF8-B697F6D39FD8}|WebApplication1\\WebApplication1.csproj|c:\\users\\dread\\documents\\documentos fabs\\projects\\zdzcode\\api\\webapplication1\\webapplication1\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{519E829F-CD98-4F07-8BF8-B697F6D39FD8}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{519E829F-CD98-4F07-8BF8-B697F6D39FD8}|WebApplication1\\WebApplication1.csproj|c:\\users\\dread\\documents\\documentos fabs\\projects\\zdzcode\\api\\webapplication1\\webapplication1\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{519E829F-CD98-4F07-8BF8-B697F6D39FD8}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,12 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{26341fe2-71dd-46fd-bb1b-2e51a92a0d64}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -36,22 +28,9 @@
               "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
               "ToolTip": "C:\\Users\\Dread\\Documents\\Documentos Fabs\\Projects\\zdzcode\\API\\WebApplication1\\WebApplication1\\Program.cs",
               "RelativeToolTip": "WebApplication1\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-30T19:57:23.287Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\Dread\\Documents\\Documentos Fabs\\Projects\\zdzcode\\API\\WebApplication1\\WebApplication1\\Models\\Usuario.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Models\\Usuario.cs",
-              "ToolTip": "C:\\Users\\Dread\\Documents\\Documentos Fabs\\Projects\\zdzcode\\API\\WebApplication1\\WebApplication1\\Models\\Usuario.cs",
-              "RelativeToolTip": "WebApplication1\\Models\\Usuario.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T19:56:13.705Z",
               "EditorCaption": ""
             },
             {
@@ -64,8 +43,7 @@
               "RelativeToolTip": "WebApplication1\\Controllers\\UserController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T19:41:13.074Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-30T19:41:13.074Z"
             }
           ]
         }
