@@ -12,15 +12,6 @@
 ## Documentação Adicional
 ### Todas as informações adicionais sobre este projeto podem ser encontradas na [Obsidian Vault](https://github.com/FabbSantos/budget-it/tree/main/Obsidian%20Vault%20(README)). Por favor, consulte a Obsidian Vault para obter detalhes mais específicos sobre a implementação do código, estrutura do projeto, e outros detalhes técnicos.
 
-### Como Usar
-Para usar o Budget It, siga as instruções abaixo:
-
-1 - Clone o repositório do projeto.
-
-2 - Instale as dependências necessárias.
-
-3 - Inicie o servidor e acesse o aplicativo através do navegador.
-
 
 ### Contribuição
 Se você deseja contribuir para este projeto, por favor, siga as diretrizes de contribuição. Todas as contribuições são bem-vindas!
