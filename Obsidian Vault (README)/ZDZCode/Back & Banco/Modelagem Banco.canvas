@@ -1,0 +1,20 @@
+{
+	"nodes":[
+		{"id":"b47eb35305b70c2e","type":"text","text":"\texcluir transação\n","x":-220,"y":-460,"width":271,"height":60},
+		{"id":"f6a162e6498c819f","type":"text","text":"\teditar transação","x":-220,"y":-560,"width":271,"height":60},
+		{"id":"e5c61c501e8f3b38","type":"text","text":"\tcadastrar transação","x":-220,"y":-370,"width":271,"height":60},
+		{"id":"3ad12ef63b35be27","type":"text","text":"\tconsultar saldo","x":340,"y":-460,"width":250,"height":60},
+		{"id":"ae02a18c3c80af0c","type":"text","text":"\tconsultar transação","x":340,"y":-560,"width":272,"height":60},
+		{"id":"96fa20e83623368c","type":"file","file":"user.png","x":120,"y":-500,"width":140,"height":140},
+		{"id":"ff2537b7fb37cf13","type":"text","text":"\tusuário\nid: pk serial;\nnome: varchar(20);\nsaldo: long;","x":-180,"y":-130,"width":245,"height":200},
+		{"id":"60c0fa213686eb27","type":"text","text":"\ttransação\nid_transacao: pk serial;\nid_usuario: fk;\nvalor: long;\ntipo: varchar(10);\ndata: date;","x":325,"y":-140,"width":280,"height":220}
+	],
+	"edges":[
+		{"id":"e59ca07293e8390e","fromNode":"96fa20e83623368c","fromSide":"left","toNode":"b47eb35305b70c2e","toSide":"right"},
+		{"id":"36b7ce67f3a04e0e","fromNode":"96fa20e83623368c","fromSide":"left","toNode":"f6a162e6498c819f","toSide":"right"},
+		{"id":"b0d92cadb957b1bc","fromNode":"96fa20e83623368c","fromSide":"left","toNode":"e5c61c501e8f3b38","toSide":"right"},
+		{"id":"74e3f65df7347e97","fromNode":"96fa20e83623368c","fromSide":"right","toNode":"ae02a18c3c80af0c","toSide":"left"},
+		{"id":"d0df4466f63994c4","fromNode":"96fa20e83623368c","fromSide":"right","toNode":"3ad12ef63b35be27","toSide":"left"},
+		{"id":"c03695743db7b167","fromNode":"60c0fa213686eb27","fromSide":"left","toNode":"ff2537b7fb37cf13","toSide":"right","label":"1               n"}
+	]
+}
