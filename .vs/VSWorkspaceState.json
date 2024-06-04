@@ -1,11 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\.github\\workflows",
     "\\API",
     "\\API\\WebApplication1",
-    "\\API\\WebApplication1\\WebApplication1"
+    "\\API\\WebApplication1\\WebApplication1",
+    "\\API\\WebApplication1\\WebApplication1\\Controllers",
+    "\\API\\WebApplication1\\WebApplication1\\Models",
+    "\\API\\WebApplication1\\WebApplication1\\Properties"
   ],
-  "SelectedNode": "\\API\\WebApplication1\\WebApplication1.sln",
+  "SelectedNode": "\\API\\WebApplication1\\WebApplication1\\appsettings.json",
   "PreviewInSolutionExplorer": false
 }

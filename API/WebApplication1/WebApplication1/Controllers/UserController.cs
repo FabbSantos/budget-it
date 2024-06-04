@@ -1,12 +1,15 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Data;
 using Npgsql;
+using WebApplication.Models;
+using Dapper; // Assuming you've installed Dapper
 
 namespace WebApplication1.Controllers
 {
+    [Route("usuario")]
     public class UserController : Controller
     {
-        private readonly IConfiguration? _configuration;
+        private readonly IConfiguration _configuration;
 
         public UserController(IConfiguration configuration)
         {
@@ -14,31 +17,66 @@ namespace WebApplication1.Controllers
         }
 
         [HttpGet]
-        public JsonResult Get() 
+        public IActionResult Get()
         {
-            string query = @"
-                select id_usuario as ""id_usuario"",
-                        name as ""user_name"",
-                        valor as ""valor""
-                from usuario";  
+            string query = @"select * from usuario";
 
-            DataTable table = new DataTable();
-            string sqlDataSource = _configuration.GetConnectionString("BudgetIt");
-            NpgsqlDataReader myReader;
-
-            using (NpgsqlConnection myCon = new NpgsqlConnection(sqlDataSource))
+            using (var connection = new NpgsqlConnection(_configuration.GetConnectionString("BudgetIt")))
             {
-                myCon.Open();
-                using (NpgsqlCommand myCommand = new NpgsqlCommand(query, myCon))
+                try
                 {
-                    myReader=myCommand.ExecuteReader();
-                    table.Load(myReader);
-
-                    myReader.Close();
-                    myCon.Close();
+                    // Assuming connection string is correct in appsettings.json
+                    var users = connection.Query<Usuario>(query);
+                    return Json(users);
+                }
+                catch (NpgsqlException ex)
+                {
+                    // Handle the exception, log the error, return an appropriate error response
+                    return StatusCode(500, ex.Message);
                 }
             }
-            return new JsonResult(table);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Post(Usuario user)
+        {
+            string query = @"insert into usuario (nome) values (@nome)";
+
+            using (var connection = new NpgsqlConnection(_configuration.GetConnectionString("BudgetIt")))
+            {
+                try
+                {
+                    await connection.ExecuteAsync(query, new { nome = user.Name});
+                    return StatusCode(200,  user.Name); // Or NoContent() if no data needs to be returned
+                }
+                catch (NpgsqlException ex)
+                {
+                    // Handle the exception, log the error, return an appropriate error response
+                    return StatusCode(500, ex.Message);
+                }
+            }
+        }
+        [HttpPut]
+        public async Task<IActionResult> Put(Usuario user)
+        {
+            string query = @"
+                update usuario 
+                set nome = @nome
+                where id_usuario = 1";
+
+            using (var connection = new NpgsqlConnection(_configuration.GetConnectionString("BudgetIt")))
+            {
+                try
+                {
+                    await connection.ExecuteAsync(query, new { nome = user.Name });
+                    return StatusCode(200, "User updated"); // Or NoContent() if no data needs to be returned
+                }
+                catch (NpgsqlException ex)
+                {
+                    // Handle the exception, log the error, return an appropriate error response
+                    return StatusCode(500, ex.Message);
+                }
+            }
         }
 
     }
