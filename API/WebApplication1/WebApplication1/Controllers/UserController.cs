@@ -26,8 +26,8 @@ namespace WebApplication1.Controllers
                 try
                 {
                     // Assuming connection string is correct in appsettings.json
-                    var users = connection.Query<Usuario>(query);
-                    return Json(users);
+                    var transactions = connection.Query<Usuario>(query);
+                    return Json(transactions);
                 }
                 catch (NpgsqlException ex)
                 {
@@ -40,14 +40,14 @@ namespace WebApplication1.Controllers
         [HttpPost]
         public async Task<IActionResult> Post(Usuario user)
         {
-            string query = @"insert into usuario (nome) values (@nome)";
+            string query = @"insert into usuario (nome, saldo) values (@nome, @saldo)";
 
             using (var connection = new NpgsqlConnection(_configuration.GetConnectionString("BudgetIt")))
             {
                 try
                 {
-                    await connection.ExecuteAsync(query, new { nome = user.Name});
-                    return StatusCode(200,  user.Name); // Or NoContent() if no data needs to be returned
+                    await connection.ExecuteAsync(query, new { nome = user.Nome, saldo = user.Saldo});
+                    return StatusCode(200,  user.Nome); // Or NoContent() if no data needs to be returned
                 }
                 catch (NpgsqlException ex)
                 {
@@ -68,7 +68,7 @@ namespace WebApplication1.Controllers
             {
                 try
                 {
-                    await connection.ExecuteAsync(query, new { nome = user.Name });
+                    await connection.ExecuteAsync(query, new { nome = user.Nome });
                     return StatusCode(200, "User updated"); // Or NoContent() if no data needs to be returned
                 }
                 catch (NpgsqlException ex)

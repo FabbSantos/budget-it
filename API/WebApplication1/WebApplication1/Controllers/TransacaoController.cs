@@ -26,8 +26,8 @@ namespace WebApplication1.Controllers
                 try
                 {
                     // Assuming connection string is correct in appsettings.json
-                    var users = connection.Query<Transacao>(query);
-                    return Json(users);
+                    var transactions = connection.Query<Transacao>(query);
+                    return Json(transactions);
                 }
                 catch (NpgsqlException ex)
                 {

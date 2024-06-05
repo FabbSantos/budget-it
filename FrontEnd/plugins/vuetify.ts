@@ -6,12 +6,14 @@ import * as directives from 'vuetify/directives';
 const myTheme: ThemeDefinition = {
     dark: false,
     colors: {
-        primaryPink: '#D64BC2',
+        primaryPink: '#C355B4',
         secondaryPink: '#FFD4F4',
         incomeGreen: '#00AE4E',
+        bgIncomeGreen: '#E5FFF1',
         expenseRed: '#FF4437',
+        bgExpenseRed: '#FFEBEA',
         gray: '#F1F3F4',
-        label: '#001733',
+        label: '#808B99',
         heading: '#25282C',
     },
 };

@@ -11,6 +11,10 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:API\\WebApplication1\\WebApplication1\\Models\\Usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dread\\Documents\\Documentos Fabs\\Projects\\zdzcode\\API\\WebApplication1\\WebApplication1\\Controllers\\TransacaoController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:API\\WebApplication1\\WebApplication1\\Controllers\\TransacaoController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dread\\Documents\\Documentos Fabs\\Projects\\zdzcode\\API\\WebApplication1\\WebApplication1\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:API\\WebApplication1\\WebApplication1\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -26,34 +30,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\Dread\\Documents\\Documentos Fabs\\Projects\\zdzcode\\API\\WebApplication1\\WebApplication1\\Models\\Usuario.cs",
-              "RelativeDocumentMoniker": "API\\WebApplication1\\WebApplication1\\Models\\Usuario.cs",
-              "ToolTip": "C:\\Users\\Dread\\Documents\\Documentos Fabs\\Projects\\zdzcode\\API\\WebApplication1\\WebApplication1\\Models\\Usuario.cs",
-              "RelativeToolTip": "API\\WebApplication1\\WebApplication1\\Models\\Usuario.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T23:21:43.765Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Dread\\Documents\\Documentos Fabs\\Projects\\zdzcode\\API\\WebApplication1\\WebApplication1\\Program.cs",
-              "RelativeDocumentMoniker": "API\\WebApplication1\\WebApplication1\\Program.cs",
-              "ToolTip": "C:\\Users\\Dread\\Documents\\Documentos Fabs\\Projects\\zdzcode\\API\\WebApplication1\\WebApplication1\\Program.cs",
-              "RelativeToolTip": "API\\WebApplication1\\WebApplication1\\Program.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAhwCkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T23:20:47.641Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -62,14 +40,53 @@
               "RelativeDocumentMoniker": "API\\WebApplication1\\WebApplication1\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\Dread\\Documents\\Documentos Fabs\\Projects\\zdzcode\\API\\WebApplication1\\WebApplication1\\Controllers\\UserController.cs",
               "RelativeToolTip": "API\\WebApplication1\\WebApplication1\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAACoAAABUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T21:33:00.308Z",
+              "WhenOpened": "2024-06-05T05:54:08.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TransacaoController.cs",
+              "DocumentMoniker": "C:\\Users\\Dread\\Documents\\Documentos Fabs\\Projects\\zdzcode\\API\\WebApplication1\\WebApplication1\\Controllers\\TransacaoController.cs",
+              "RelativeDocumentMoniker": "API\\WebApplication1\\WebApplication1\\Controllers\\TransacaoController.cs",
+              "ToolTip": "C:\\Users\\Dread\\Documents\\Documentos Fabs\\Projects\\zdzcode\\API\\WebApplication1\\WebApplication1\\Controllers\\TransacaoController.cs",
+              "RelativeToolTip": "API\\WebApplication1\\WebApplication1\\Controllers\\TransacaoController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T05:53:11.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Dread\\Documents\\Documentos Fabs\\Projects\\zdzcode\\API\\WebApplication1\\WebApplication1\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "API\\WebApplication1\\WebApplication1\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Dread\\Documents\\Documentos Fabs\\Projects\\zdzcode\\API\\WebApplication1\\WebApplication1\\Models\\Usuario.cs",
+              "RelativeToolTip": "API\\WebApplication1\\WebApplication1\\Models\\Usuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T23:21:43.765Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Dread\\Documents\\Documentos Fabs\\Projects\\zdzcode\\API\\WebApplication1\\WebApplication1\\Program.cs",
+              "RelativeDocumentMoniker": "API\\WebApplication1\\WebApplication1\\Program.cs",
+              "ToolTip": "C:\\Users\\Dread\\Documents\\Documentos Fabs\\Projects\\zdzcode\\API\\WebApplication1\\WebApplication1\\Program.cs",
+              "RelativeToolTip": "API\\WebApplication1\\WebApplication1\\Program.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACkAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T23:20:47.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "C:\\Users\\Dread\\Documents\\Documentos Fabs\\Projects\\zdzcode\\API\\WebApplication1\\WebApplication1\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "API\\WebApplication1\\WebApplication1\\WeatherForecast.cs",
@@ -77,8 +94,7 @@
               "RelativeToolTip": "API\\WebApplication1\\WebApplication1\\WeatherForecast.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T22:07:31.403Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T22:07:31.403Z"
             }
           ]
         }
