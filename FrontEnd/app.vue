@@ -145,10 +145,6 @@
   const user = users.data
   const transactionsData = transactions.data
 
-  // const saldo = await transactionsData.reduce((acc, curr) => {
-  //   return acc + curr.Valor
-  // }, 0)
-  // console.log(transaction);
 
 
   const cards = ['Today', 'Yesterday']
