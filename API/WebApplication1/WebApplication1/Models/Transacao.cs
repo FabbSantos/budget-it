@@ -8,6 +8,7 @@ namespace WebApplication1.Controllers
 		public long Valor { get; set; }
 
 		public string Tipo { get; set; }
+		public DateTime? Data { get; set; }
 
 	}
 }

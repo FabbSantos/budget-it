@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Dread\\Documents\\Documentos Fabs\\Projects\\zdzcode\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dread\\Documents\\Documentos Fabs\\Projects\\zdzcode\\API\\WebApplication1\\WebApplication1\\Controllers\\TransacaoController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:API\\WebApplication1\\WebApplication1\\Controllers\\TransacaoController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dread\\Documents\\Documentos Fabs\\Projects\\zdzcode\\API\\WebApplication1\\WebApplication1\\Models\\Transacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:API\\WebApplication1\\WebApplication1\\Models\\Transacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dread\\Documents\\Documentos Fabs\\Projects\\zdzcode\\API\\WebApplication1\\WebApplication1\\Controllers\\UserController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:API\\WebApplication1\\WebApplication1\\Controllers\\UserController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dread\\Documents\\Documentos Fabs\\Projects\\zdzcode\\API\\WebApplication1\\WebApplication1\\Models\\Usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:API\\WebApplication1\\WebApplication1\\Models\\Usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dread\\Documents\\Documentos Fabs\\Projects\\zdzcode\\API\\WebApplication1\\WebApplication1\\Controllers\\TransacaoController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:API\\WebApplication1\\WebApplication1\\Controllers\\TransacaoController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dread\\Documents\\Documentos Fabs\\Projects\\zdzcode\\API\\WebApplication1\\WebApplication1\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,11 +34,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "Transacao.cs",
+              "DocumentMoniker": "C:\\Users\\Dread\\Documents\\Documentos Fabs\\Projects\\zdzcode\\API\\WebApplication1\\WebApplication1\\Models\\Transacao.cs",
+              "RelativeDocumentMoniker": "API\\WebApplication1\\WebApplication1\\Models\\Transacao.cs",
+              "ToolTip": "C:\\Users\\Dread\\Documents\\Documentos Fabs\\Projects\\zdzcode\\API\\WebApplication1\\WebApplication1\\Models\\Transacao.cs",
+              "RelativeToolTip": "API\\WebApplication1\\WebApplication1\\Models\\Transacao.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T04:47:40.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\Dread\\Documents\\Documentos Fabs\\Projects\\zdzcode\\API\\WebApplication1\\WebApplication1\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "API\\WebApplication1\\WebApplication1\\Controllers\\UserController.cs",
@@ -47,19 +64,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "TransacaoController.cs",
               "DocumentMoniker": "C:\\Users\\Dread\\Documents\\Documentos Fabs\\Projects\\zdzcode\\API\\WebApplication1\\WebApplication1\\Controllers\\TransacaoController.cs",
               "RelativeDocumentMoniker": "API\\WebApplication1\\WebApplication1\\Controllers\\TransacaoController.cs",
               "ToolTip": "C:\\Users\\Dread\\Documents\\Documentos Fabs\\Projects\\zdzcode\\API\\WebApplication1\\WebApplication1\\Controllers\\TransacaoController.cs",
               "RelativeToolTip": "API\\WebApplication1\\WebApplication1\\Controllers\\TransacaoController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABwAAAAAAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAwwEAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T05:53:11.451Z"
+              "WhenOpened": "2024-06-05T05:53:11.451Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\Dread\\Documents\\Documentos Fabs\\Projects\\zdzcode\\API\\WebApplication1\\WebApplication1\\Models\\Usuario.cs",
               "RelativeDocumentMoniker": "API\\WebApplication1\\WebApplication1\\Models\\Usuario.cs",
@@ -71,7 +89,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Dread\\Documents\\Documentos Fabs\\Projects\\zdzcode\\API\\WebApplication1\\WebApplication1\\Program.cs",
               "RelativeDocumentMoniker": "API\\WebApplication1\\WebApplication1\\Program.cs",
@@ -83,7 +101,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "C:\\Users\\Dread\\Documents\\Documentos Fabs\\Projects\\zdzcode\\API\\WebApplication1\\WebApplication1\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "API\\WebApplication1\\WebApplication1\\WeatherForecast.cs",

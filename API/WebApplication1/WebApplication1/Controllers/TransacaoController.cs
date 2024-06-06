@@ -40,13 +40,19 @@ namespace WebApplication1.Controllers
         [HttpPost]
         public async Task<IActionResult> Post(Transacao transacao)
         {
-            string query = @"insert into transacao ( valor, tipo) values ( @valor, @tipo)";
+            string query = @"insert into transacao (data, valor, tipo) values ( @data, @valor, @tipo)";
 
             using (var connection = new NpgsqlConnection(_configuration.GetConnectionString("BudgetIt")))
             {
                 try
                 {
-                    await connection.ExecuteAsync(query, new { data = new DateTime(), valor = transacao.Valor, tipo = transacao.Tipo});
+                    await connection.ExecuteAsync(query, new
+                    {
+                        data = transacao.Data ?? DateTime.Now, // Use nullish coalescing for optional data
+                        valor = transacao.Valor,
+                        tipo = transacao.Tipo
+                    });
+
                     return StatusCode(200, transacao); // Or NoContent() if no data needs to be returned
                 }
                 catch (NpgsqlException ex)
@@ -56,6 +62,9 @@ namespace WebApplication1.Controllers
                 }
             }
         }
+
+
+
 
         [HttpPut]
         public async Task<IActionResult> Put(Transacao transacao)

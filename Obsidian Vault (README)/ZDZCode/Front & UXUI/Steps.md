@@ -4,11 +4,15 @@
 
 - [ ] Implementar Telas
 	- [ ] Dashboard
-		- [ ] Cards
-			- [ ] Income
-			- [ ] Outcome
-			- [ ] Total Balance
+		- [x] Cards
+			- [x] Income
+			- [x] Outcome
+			- [x] Total Balance
 	
 	- [ ] Transactions
 	
 	- [ ] Lateral Menu
+		- [] Analitycs
+		- [] Wallet
+		- [] Settings
+		- [x] User
