@@ -15,46 +15,38 @@
 </script>
 
 <template>
-        <v-container
-                class="py-8 px-6"
-                fluid
-                :key="transactionsData"
-        >
+        <v-container class="py-8 px-6" fluid :key="transactionsData">
                 <v-row class="d-flex justify-space-between align-center">
-                        <v-col cols="9">
-                                <Greeting/>
+                        <v-col cols="12" md="9">
+                                <Greeting />
                         </v-col>
 
-                        <v-col cols="2">
-                                <DialogForm/>
+                        <v-col cols="12" md="2">
+                                <DialogForm />
                         </v-col>
-                        <v-col cols="1">
-                                <v-btn
-                                icon
-                                >
-                                <v-icon
-                                @click="fetchTransactions"
-                                >mdi-reload</v-icon>
+                        <v-col cols="12" md="1">
+                                <v-btn icon>
+                                        <v-icon @click="fetchTransactions">mdi-reload</v-icon>
                                 </v-btn>
                         </v-col>
                         <v-col cols="12" md="6">
-                        <TotalBalance/>
+                                <TotalBalance />
                         </v-col>
 
                         <v-col cols="6" md="3">
-                        <TotalIncome/>
+                                <TotalIncome />
                         </v-col>
 
                         <v-col cols="6" md="3">
-                        <TotalExpense/>
+                                <TotalExpense />
                         </v-col>
                 </v-row>
 
                 <v-row>
                         <v-col cols="12">
-                                <TransactionsTable/>
+                                <TransactionsTable />
                         </v-col>
                 </v-row>
-        
+
         </v-container>
 </template>

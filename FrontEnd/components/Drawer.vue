@@ -1,6 +1,11 @@
 <template>
   <v-lazy>
+
     <v-navigation-drawer v-model="drawer" class="bg-gray border-0">
+
+      <v-btn class="botao" @click="drawer = !drawer" variant="plain">
+        <v-icon>{{ drawer ? 'mdi-chevron-left' : 'mdi-menu' }}</v-icon>
+      </v-btn>
       <v-card class="pa-4 d-flex jusitfy-center align-center ga-4" color="primaryPink">
         <v-avatar class="" size="50" image="/Logo.png"></v-avatar>
         <div class="font-weight-bold">Budget it</div>
@@ -38,5 +43,12 @@
   }
   a:hover, a:active{
     color: #C355B4;
+  }
+
+  .botao {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 999;
   }
 </style>

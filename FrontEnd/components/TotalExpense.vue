@@ -75,7 +75,7 @@
                         </v-icon>
                         </div>
                         <v-card-title class="text-body-2 pl-0 pb-0 text-label">Total Expense</v-card-title>
-                        <v-card-text class="d-flex ga-4 pl-0 py-0">
+                        <v-card-text class="d-flex ga-4 pl-0 py-0 md">
                                 <p class="font-weight-bold text-h6">- R${{totalExpense}}</p>
                                 <v-tooltip text="Últimos 2 dias (dia anterior vs. último dia)" location="bottom">
                                         <template v-slot:activator="{ props }">
