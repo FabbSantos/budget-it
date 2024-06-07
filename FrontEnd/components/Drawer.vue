@@ -36,7 +36,7 @@
 
     const links = [
     ['mdi-view-dashboard-outline', 'Dashboard'],
-    ['mdi-chart-box-outline', 'Analitycs'],
+    ['mdi-chart-box-outline', 'Analytics'],
     ['mdi-wallet-bifold-outline', 'My Wallet'],
     ['mdi-cog-outline', 'Settings'],
   ]

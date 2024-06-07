@@ -11,6 +11,7 @@
   fetchTransactions();
 
   provide('transactionsData', transactionsData);
+
 </script>
 
 <template>
@@ -19,35 +20,45 @@
                 fluid
                 :key="transactionsData"
         >
-                <v-row>
-                <v-col cols="11">
-                        <Greeting/>
-                </v-col>
-                <v-col cols="1">
-                        <v-btn
-                        icon
-                        >
-                        <v-icon
-                        @click="fetchTransactions"
-                        >mdi-reload</v-icon>
-                        </v-btn>
-                </v-col>
-                <v-col cols="12" md="6">
-                <TotalBalance/>
-                </v-col>
+                <v-row class="d-flex justify-space-between align-center">
+                        <v-col cols="9">
+                                <Greeting/>
+                        </v-col>
 
-                <v-col cols="6" md="3">
-                <TotalIncome/>
-                </v-col>
+                        <v-col cols="2">
+                                <DialogForm/>
+                        </v-col>
+                        <v-col cols="1">
+                                <v-btn
+                                icon
+                                >
+                                <v-icon
+                                @click="fetchTransactions"
+                                >mdi-reload</v-icon>
+                                </v-btn>
+                        </v-col>
+                        <v-col cols="12" md="6">
+                        <TotalBalance/>
+                        </v-col>
 
-                <v-col cols="6" md="3">
-                <TotalExpense/>
-                </v-col>
+                        <v-col cols="6" md="3">
+                        <TotalIncome/>
+                        </v-col>
+
+                        <v-col cols="6" md="3">
+                        <TotalExpense/>
+                        </v-col>
                 </v-row>
+
+                <!-- <v-row>
+                        <v-col cols="12">
+                                <Analitycs/>
+                        </v-col>
+                </v-row> -->
 
                 <v-row>
                         <v-col cols="12">
-                                <Analitycs/>
+                                <TransactionsTable/>
                         </v-col>
                 </v-row>
         
