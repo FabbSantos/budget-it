@@ -1,10 +1,13 @@
 <template>
   <v-app id="inspire">
 
+
   <Drawer/>
 
     <v-main>
-      <Dashboard/>
+      <NuxtLayout>
+        <NuxtPage/>
+      </NuxtLayout>
     </v-main>
 
   </v-app>

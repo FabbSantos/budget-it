@@ -1,12 +1,14 @@
 <template>
-  <div>
-    <v-card class="pb-8">
-      <v-card-title class="text-label ml-8 mt-2 font-weight-regular">
-        Transactions overview
-      </v-card-title>
-      <canvas id="transactionChart"></canvas>
-    </v-card>
-  </div>
+  <v-lazy>
+    <div>
+      <v-card class="pb-8">
+        <v-card-title class="text-label ml-8 mt-2 font-weight-regular">
+          Transactions overview
+        </v-card-title>
+        <canvas id="transactionChart"></canvas>
+      </v-card>
+    </div>
+  </v-lazy>
 </template>
 
 <script setup>
