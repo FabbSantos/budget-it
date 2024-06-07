@@ -148,7 +148,7 @@ async function editTransaction(item) {
         deleted.value = false
         transactionTypeE.value = item.Tipo === 'Income' ? 'D' : 'R';
         try {
-                const response = await $fetch(`http://localhost:5231/transacao?Id_transacao=${item.Id_transacao}&Valor=${valorE.value}&Tipo=${transactionTypeE.value}&Data=${transactionDataE.value}`, {
+                const response = await $fetch(`https://webapplication120240607152445.azurewebsites.net//transacao?Id_transacao=${item.Id_transacao}&Valor=${valorE.value}&Tipo=${transactionTypeE.value}&Data=${transactionDataE.value}`, {
                         method: 'PUT',
                         headers: {
                                 'Content-Type': 'application/json',
@@ -177,7 +177,7 @@ async function deleteTransaction(id) {
         deleted.value = false
 
         try {
-                await $fetch(`http://localhost:5231/transacao/${id}`, {
+                await $fetch(`https://webapplication120240607152445.azurewebsites.net//transacao/${id}`, {
                         method: 'DELETE',
                         headers: {
                                 'Content-Type': 'application/json',

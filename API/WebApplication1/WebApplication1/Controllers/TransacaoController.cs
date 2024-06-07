@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Data;
-using Npgsql;
 using WebApplication.Models;
-using Dapper; // Assuming you've installed Dapper
+using Dapper;
+using System.Data.SqlClient; // Assuming you've installed Dapper
 
 namespace WebApplication1.Controllers
 {
@@ -21,7 +21,7 @@ namespace WebApplication1.Controllers
         {
             string query = @"select * from transacao";
 
-            using (var connection = new NpgsqlConnection(_configuration.GetConnectionString("BudgetIt")))
+            using (var connection = new SqlConnection(_configuration.GetConnectionString("BudgetIt")))
             {
                 try
                 {
@@ -29,7 +29,7 @@ namespace WebApplication1.Controllers
                     var transactions = connection.Query<Transacao>(query);
                     return Json(transactions);
                 }
-                catch (NpgsqlException ex)
+                catch (Exception ex)
                 {
                     // Handle the exception, log the error, return an appropriate error response
                     return StatusCode(500, ex.Message);
@@ -42,7 +42,7 @@ namespace WebApplication1.Controllers
         {
             string query = @"insert into transacao (data, valor, tipo) values ( @data, @valor, @tipo)";
 
-            using (var connection = new NpgsqlConnection(_configuration.GetConnectionString("BudgetIt")))
+            using (var connection = new SqlConnection(_configuration.GetConnectionString("BudgetIt")))
             {
                 try
                 {
@@ -55,7 +55,7 @@ namespace WebApplication1.Controllers
 
                     return StatusCode(200, transacao); // Or NoContent() if no data needs to be returned
                 }
-                catch (NpgsqlException ex)
+                catch (Exception ex)
                 {
                     // Handle the exception, log the error, return an appropriate error response
                     return StatusCode(500, ex.Message);
@@ -75,14 +75,14 @@ namespace WebApplication1.Controllers
                     tipo = @tipo
                 where id_transacao = @id_transacao";
 
-            using (var connection = new NpgsqlConnection(_configuration.GetConnectionString("BudgetIt")))
+            using (var connection = new SqlConnection(_configuration.GetConnectionString("BudgetIt")))
             {
                 try
                 {
                     await connection.ExecuteAsync(query, new { valor = transacao.Valor, tipo = transacao.Tipo, id_transacao = transacao.Id_transacao });
                     return StatusCode(200, "Transaction updated"); // Or NoContent() if no data needs to be returned
                 }
-                catch (NpgsqlException ex)
+                catch (Exception ex)
                 {
                     // Handle the exception, log the error, return an appropriate error response
                     return StatusCode(500, ex.Message);
@@ -97,14 +97,14 @@ namespace WebApplication1.Controllers
                 delete from transacao
                 where id_transacao = @Id";
 
-            using (var connection = new NpgsqlConnection(_configuration.GetConnectionString("BudgetIt")))
+            using (var connection = new SqlConnection(_configuration.GetConnectionString("BudgetIt")))
             {
                 try
                 {
                     await connection.ExecuteAsync(query, new { Id });
                     return StatusCode(200, "Transaction deleted "); // Or NoContent() if no data needs to be returned
                 }
-                catch (NpgsqlException ex)
+                catch (Exception ex)
                 {
                     // Handle the exception, log the error, return an appropriate error response
                     return StatusCode(500, ex.Message);

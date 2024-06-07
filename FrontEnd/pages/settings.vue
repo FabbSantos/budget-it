@@ -26,7 +26,7 @@ const nameForChange = ref();
 
 async function editName() {
         try {
-                const response = await fetch(`http://localhost:5231/usuario?Nome=${nameForChange.value}`, {
+                const response = await fetch(`https://webapplication120240607152445.azurewebsites.net//usuario?Nome=${nameForChange.value}`, {
                         method: 'PUT',
                         headers: {
                                 'Content-Type': 'application/json'

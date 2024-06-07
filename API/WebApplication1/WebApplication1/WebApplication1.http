@@ -1,4 +1,4 @@
-@WebApplication1_HostAddress = http://localhost:5231
+@WebApplication1_HostAddress = https://webapplication120240607152445.azurewebsites.net/
 
 GET {{WebApplication1_HostAddress}}/weatherforecast/
 Accept: application/json

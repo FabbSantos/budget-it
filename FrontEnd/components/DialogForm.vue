@@ -14,7 +14,7 @@ async function addTransaction() {
                         tipo: transactionType.value === 'Income' ? 'D' : 'R',
                 };
                 console.log(transaction);
-                await $fetch(`http://localhost:5231/transacao?Valor=${transaction.valor}&Tipo=${transaction.tipo}`, {
+                await $fetch(`https://webapplication120240607152445.azurewebsites.net//transacao?Valor=${transaction.valor}&Tipo=${transaction.tipo}`, {
                         method: 'POST',
                         body: JSON.stringify({
                                 Valor: transaction.valor,

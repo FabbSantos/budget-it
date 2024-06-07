@@ -1,5 +1,5 @@
 <script setup>
-const users = await useFetch('http://localhost:5231/usuario')
+const users = await useFetch('https://webapplication120240607152445.azurewebsites.net//usuario')
 const user = users.data
 console.log(user.value);
 </script>
