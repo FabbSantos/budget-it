@@ -4,7 +4,7 @@
   const transactionsData = ref([]);
 
   const fetchTransactions = async () => {
-    const transactions = await useFetch('https://webapplication120240607152445.azurewebsites.net//transacao');
+    const transactions = await useFetch('https://webapplication120240607152445.azurewebsites.net/transacao');
     transactionsData.value = transactions.data.value;
   }
 

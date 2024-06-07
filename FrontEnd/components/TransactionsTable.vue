@@ -148,7 +148,7 @@ async function editTransaction(item) {
         deleted.value = false
         transactionTypeE.value = item.Tipo === 'Income' ? 'D' : 'R';
         try {
-                const response = await $fetch(`https://webapplication120240607152445.azurewebsites.net//transacao?Id_transacao=${item.Id_transacao}&Valor=${valorE.value}&Tipo=${transactionTypeE.value}&Data=${transactionDataE.value}`, {
+                const response = await $fetch(`https://webapplication120240607152445.azurewebsites.net/transacao?Id_transacao=${item.Id_transacao}&Valor=${valorE.value}&Tipo=${transactionTypeE.value}&Data=${transactionDataE.value}`, {
                         method: 'PUT',
                         headers: {
                                 'Content-Type': 'application/json',
@@ -165,7 +165,7 @@ async function editTransaction(item) {
                 }
 
                 const data = await response.json();
-                console.log(data);
+                // console.log(data);
                 // Atualize o estado ou faça algo com os dados retornados
         } catch (error) {
                 console.error('Erro ao editar a transação:', error);
@@ -177,7 +177,7 @@ async function deleteTransaction(id) {
         deleted.value = false
 
         try {
-                await $fetch(`https://webapplication120240607152445.azurewebsites.net//transacao/${id}`, {
+                await $fetch(`https://webapplication120240607152445.azurewebsites.net/transacao/${id}`, {
                         method: 'DELETE',
                         headers: {
                                 'Content-Type': 'application/json',

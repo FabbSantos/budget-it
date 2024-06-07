@@ -20,7 +20,7 @@ Chart.register(...registerables);
 const transactionsData = ref([]);
 
 onMounted(async () => {
-  const response = await fetch('https://webapplication120240607152445.azurewebsites.net//transacao');
+  const response = await fetch('https://webapplication120240607152445.azurewebsites.net/transacao');
   const data = await response.json();
   transactionsData.value = data;
 
